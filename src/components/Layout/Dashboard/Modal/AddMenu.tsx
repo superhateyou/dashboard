@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { getWidgets } from '../../../../api/api';
