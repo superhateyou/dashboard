@@ -12,6 +12,7 @@ import { UseWindowSize } from '../../../hooks/useWindowSize';
 import { getWidgets } from '../../../api/api';
 import GridCell from './GridCell/GridCell';
 import AddMenu from './Modal/AddMenu';
+import Loader from '../../../helpers/Loader';
 
 export default function Dashboard() {
   const [rowCount, setRowCount] = useState(3);
@@ -89,7 +90,7 @@ export default function Dashboard() {
       <Modal active={modalActive} setActive={setModalActive}>
         <AddMenu active={modalActive} data={items} setVidget={setItems} />
       </Modal>
-      {items ? (
+      {items ? <Loader /> : (
         <GridContextProvider onChange={onChange}>
           <GridDropZone
             id="items"
@@ -108,7 +109,7 @@ export default function Dashboard() {
             ))}
           </GridDropZone>
         </GridContextProvider>
-      ) : null}
+      )}
     </AppWrapper>
   );
 }

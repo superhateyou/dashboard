@@ -25,7 +25,7 @@ function AddMenu({ active, data, setVidget } : any) {
     }
   }, [received]);
 
-  const onClick = (e) => {
+  const onClick = (e: any) => {
     const activeFlag = e.target.attributes.getNamedItem('active').value;
     const name = e.target.attributes.getNamedItem('name').value;
     if (activeFlag === 'inactive') {
@@ -42,7 +42,7 @@ function AddMenu({ active, data, setVidget } : any) {
 
   return (
     <Wrapper>
-      {items ? items.filter((({ name }) => activeItems.map((el) => el.name).includes(name)))
+      {!items ? items.filter((({ name }) => activeItems.map((el) => el.name).includes(name)))
         .map((el) => (
           <div
             name={el.name}

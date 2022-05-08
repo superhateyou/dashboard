@@ -11,14 +11,14 @@
     }
   },
   {
-    "id": "34543634",
-    "type": "note",
-    "name": "note",
+    "id": "fq14325fd",
+    "type": "label",
+    "name": "faq2",
     "params": {
-      "link": "fdsfs",
-      "title": "gsgfd",
+      "link": "https://dev-bitrix.by/cabinet/",
+      "title": "Личный кабинет",
       "background": "fdffds",
-      "notifications": 3
+      "notifications": 15
     }
   }
 ]
