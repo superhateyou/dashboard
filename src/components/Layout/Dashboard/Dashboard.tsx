@@ -90,7 +90,7 @@ export default function Dashboard() {
       <Modal active={modalActive} setActive={setModalActive}>
         <AddMenu active={modalActive} data={items} setVidget={setItems} />
       </Modal>
-      {items ? <Loader /> : (
+      {!items ? <Loader /> : (
         <GridContextProvider onChange={onChange}>
           <GridDropZone
             id="items"

@@ -42,7 +42,7 @@ function AddMenu({ active, data, setVidget } : any) {
 
   return (
     <Wrapper>
-      {!items ? items.filter((({ name }) => activeItems.map((el) => el.name).includes(name)))
+      {items ? items.filter((({ name }) => activeItems.map((el) => el.name).includes(name)))
         .map((el) => (
           <div
             name={el.name}
