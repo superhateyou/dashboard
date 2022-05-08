@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "noImplicitAny": false,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "react/jsx-no-bind": false
+  },
+  "include": ["src"],
+}

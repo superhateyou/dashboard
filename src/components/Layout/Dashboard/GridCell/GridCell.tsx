@@ -24,7 +24,7 @@ export default function GridCell({
           alt="cross"
         />
       </Cross>
-      <WidgetConstructor id={item} />
+      <WidgetConstructor data={item} />
     </Card>
   );
 }

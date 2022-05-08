@@ -1,1 +1,46 @@
-["note", "gallery"]
+[
+  {
+    "id": "34543634",
+    "type": "note",
+    "name": "note",
+    "params": {
+      "link": "fdsfs",
+      "title": "gsgfd",
+      "background": "fdffds",
+      "notifications": 3
+    }
+  },
+  {
+    "id": "gfsdhsrs",
+    "type": "gallery",
+    "name": "gallery",
+    "params": {
+      "link": "fdsfs",
+      "title": "gsgfd",
+      "background": "fdffds",
+      "notifications": 3
+    }
+  },
+  {
+    "id": "fq14325",
+    "type": "label",
+    "name": "faq",
+    "params": {
+      "link": "https://dev-bitrix.by/cabinet/faq/",
+      "title": "Вопрос-ответ",
+      "background": "fdffds",
+      "notifications": 5
+    }
+  },
+  {
+    "id": "fdfvc",
+    "type": "label",
+    "name": "payslips",
+    "params": {
+      "link": "https://dev-bitrix.by/payslip/",
+      "title": "Рассчетники",
+      "background": "fdffds",
+      "notifications": 1
+    }
+  }
+]

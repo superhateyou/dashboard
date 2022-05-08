@@ -23,8 +23,8 @@
   padding: 50px;
   border-radius: 20px;
   background: white;
-  height: 200px;
-  width: 50vw; 
+  height: 50vh;
+  width: 70vw; 
   z-index: 6;
   transition: scale(0.5);
   transition: 0.4s all;

@@ -11,6 +11,7 @@ import Modal from './Modal/Modal';
 import { UseWindowSize } from '../../../hooks/useWindowSize';
 import { getWidgets } from '../../../api/api';
 import GridCell from './GridCell/GridCell';
+import AddMenu from './Modal/AddMenu';
 
 export default function Dashboard() {
   const [rowCount, setRowCount] = useState(3);
@@ -25,7 +26,7 @@ export default function Dashboard() {
   const [cursorStyle, setCursorStyle] = useState({ cursor: 'default' });
   const [crossStyle, setCrossStyle] = useState({ display: 'none' });
 
-  const [items, setItems] = useState<string[] | undefined>();
+  const [items, setItems] = useState<any[] | undefined>();
 
   const rowHeightCalc = (width : number, row : number) => width / 1.21 / row / 1.4;
   const blockHeightCalc = (arr : string[], width : number, row : number) => {
@@ -34,7 +35,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    getWidgets('/widgets.json', setItems);
+    getWidgets('/current.json', setItems);
   }, []);
 
   useEffect(() => {
@@ -86,9 +87,8 @@ export default function Dashboard() {
         editFields={editFields}
       />
       <Modal active={modalActive} setActive={setModalActive}>
-        <div>hi</div>
+        <AddMenu active={modalActive} data={items} setVidget={setItems} />
       </Modal>
-      {console.log('main render')}
       {items ? (
         <GridContextProvider onChange={onChange}>
           <GridDropZone
@@ -100,7 +100,7 @@ export default function Dashboard() {
           >
             {items.map((item) => (
               <GridItem
-                key={item}
+                key={item.id}
                 style={cursorStyle}
               >
                 <GridCell item={item} deleteItem={deleteItem} crossStyle={crossStyle} />

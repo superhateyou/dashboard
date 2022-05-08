@@ -1,0 +1,24 @@
+[
+  {
+    "id": "fq14325",
+    "type": "label",
+    "name": "faq",
+    "params": {
+      "link": "https://dev-bitrix.by/cabinet/faq/",
+      "title": "Вопрос-ответ",
+      "background": "fdffds",
+      "notifications": 5
+    }
+  },
+  {
+    "id": "34543634",
+    "type": "note",
+    "name": "note",
+    "params": {
+      "link": "fdsfs",
+      "title": "gsgfd",
+      "background": "fdffds",
+      "notifications": 3
+    }
+  }
+]
